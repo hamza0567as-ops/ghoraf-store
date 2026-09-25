@@ -4,563 +4,983 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>مطابخ مستعملة وشبه جديدة بالرياض | توصيل وتركيب</title>
+<title>مطابخ جديدة جاهزة بالرياض | معرض المطابخ</title>
 
-<meta name="description" content="بيع مطابخ مستعملة وشبه جديدة بالرياض مع التوصيل والتركيب. مطابخ متنوعة بأسعار مناسبة وخدمة داخل الرياض.">
+<meta name="description" content="مطابخ جديدة وجاهزة بالرياض بتصاميم عصرية وكلاسيكية. شاهد معرض المطابخ وتواصل معنا عبر واتساب لطلب المطبخ المناسب.">
 
-<meta name="keywords" content="مطابخ مستعملة بالرياض, مطابخ مستعمل بالرياض, مطابخ شبه جديدة بالرياض, بيع مطابخ مستعملة الرياض, مطابخ جاهزة بالرياض, مطابخ مع التوصيل والتركيب بالرياض">
+<meta name="keywords" content="مطابخ جاهزة بالرياض, مطابخ جديدة بالرياض, مطابخ للبيع بالرياض, مطابخ جاهزة, مطابخ حديثة بالرياض, مطابخ خشبية بالرياض, مطابخ بيضاء بالرياض">
 
 <style>
 *{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
 }
 
 html{
-  scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }
 
 body{
-  font-family:Tahoma,Arial,sans-serif;
-  background:#f7f5f1;
-  color:#222;
-  line-height:1.8;
-}
-
-a{
-  text-decoration:none;
-}
-
-.container{
-  width:92%;
-  max-width:1150px;
-  margin:auto;
+    font-family:Tahoma,Arial,sans-serif;
+    background:#f5f5f5;
+    color:#222;
+    line-height:1.8;
 }
 
 /* الهيدر */
 header{
-  background:#173b32;
-  color:white;
-  padding:15px 0;
-  position:sticky;
-  top:0;
-  z-index:1000;
-  box-shadow:0 2px 15px #0003;
+    background:#173b32;
+    color:#fff;
+    padding:16px 15px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 3px 15px rgba(0,0,0,.18);
 }
 
-.nav{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:20px;
+.header-inner{
+    width:92%;
+    max-width:1150px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:15px;
 }
 
 .logo{
-  font-size:21px;
-  font-weight:bold;
+    font-size:22px;
+    font-weight:bold;
 }
 
-nav{
-  display:flex;
-  gap:20px;
-  flex-wrap:wrap;
+.logo span{
+    color:#d8b477;
 }
 
-nav a{
-  color:white;
-  font-size:15px;
+.header-btn{
+    background:#d8b477;
+    color:#173b32;
+    padding:10px 18px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
 }
 
-/* الرئيسية */
+/* الواجهة */
 .hero{
-  background:linear-gradient(135deg,#173b32,#326a58);
-  color:white;
-  padding:75px 0;
+    background:
+    linear-gradient(rgba(23,59,50,.88),rgba(23,59,50,.88)),
+    url("kitchen-3.jpg") center/cover;
+
+    color:white;
+    text-align:center;
+    padding:75px 20px;
 }
 
-.hero-content{
-  display:grid;
-  grid-template-columns:1.2fr .8fr;
-  gap:40px;
-  align-items:center;
-}
-
-.badge{
-  display:inline-block;
-  padding:7px 15px;
-  background:#ffffff20;
-  border:1px solid #ffffff40;
-  border-radius:30px;
-  margin-bottom:15px;
-}
-
-h1{
-  font-size:clamp(34px,5vw,58px);
-  line-height:1.25;
-  margin-bottom:20px;
+.hero h1{
+    font-size:38px;
+    margin-bottom:15px;
 }
 
 .hero p{
-  font-size:19px;
-  color:#edf5f1;
+    font-size:19px;
+    max-width:750px;
+    margin:0 auto 25px;
 }
 
-.buttons{
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap;
-  margin-top:28px;
-}
-
-.btn{
-  display:inline-block;
-  padding:13px 23px;
-  border-radius:10px;
-  font-weight:bold;
-}
-
-.whatsapp{
-  background:#25d366;
-  color:white;
-}
-
-.phone{
-  background:white;
-  color:#173b32;
-}
-
-.hero-box{
-  background:#ffffff18;
-  border:1px solid #ffffff35;
-  border-radius:25px;
-  padding:40px;
-  text-align:center;
-}
-
-.hero-icon{
-  font-size:80px;
+.hero-btn{
+    display:inline-block;
+    background:#25D366;
+    color:#fff;
+    padding:13px 28px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:17px;
 }
 
 /* الأقسام */
-section{
-  padding:65px 0;
+.section{
+    width:92%;
+    max-width:1150px;
+    margin:50px auto;
 }
 
 .section-title{
-  text-align:center;
-  margin-bottom:35px;
+    text-align:center;
+    margin-bottom:30px;
 }
 
 .section-title h2{
-  font-size:34px;
-  margin-bottom:8px;
+    font-size:30px;
+    color:#173b32;
+    margin-bottom:8px;
 }
 
 .section-title p{
-  color:#777;
+    color:#666;
 }
 
-/* الخدمات */
-.services{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
+/* المعرض */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
 }
 
 .card{
-  background:white;
-  padding:28px;
-  border-radius:18px;
-  box-shadow:0 5px 25px #0000000d;
-  border:1px solid #eee;
+    background:#fff;
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.10);
+    transition:.3s;
 }
 
-.card-icon{
-  font-size:42px;
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 28px rgba(0,0,0,.16);
 }
 
-.card h3{
-  margin:10px 0;
-  font-size:21px;
+.image-box{
+    position:relative;
+    cursor:pointer;
+    overflow:hidden;
 }
 
-/* النماذج */
-.gallery{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
+.image-box img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    display:block;
+    transition:.4s;
 }
 
-.gallery-card{
-  min-height:190px;
-  border-radius:18px;
-  padding:25px;
-  display:flex;
-  align-items:end;
-  color:white;
-  font-size:21px;
-  font-weight:bold;
-  background:linear-gradient(135deg,#45675a,#b7a487);
-  box-shadow:0 5px 20px #0002;
+.card:hover .image-box img{
+    transform:scale(1.04);
 }
 
-.gallery-card:nth-child(2){
-  background:linear-gradient(135deg,#65452f,#c6a278);
+.zoom-label{
+    position:absolute;
+    left:12px;
+    top:12px;
+    background:rgba(0,0,0,.65);
+    color:#fff;
+    padding:6px 11px;
+    border-radius:20px;
+    font-size:13px;
 }
 
-.gallery-card:nth-child(3){
-  background:linear-gradient(135deg,#eeeeee,#888);
-  color:#222;
+.card-content{
+    padding:18px;
 }
 
-.gallery-card:nth-child(4){
-  background:linear-gradient(135deg,#222,#888);
+.card-content h3{
+    color:#173b32;
+    font-size:20px;
+    margin-bottom:7px;
 }
 
-.gallery-card:nth-child(5){
-  background:linear-gradient(135deg,#9d3030,#555);
+.card-content p{
+    color:#666;
+    font-size:14px;
+    margin-bottom:15px;
 }
 
-.gallery-card:nth-child(6){
-  background:linear-gradient(135deg,#f5f1e8,#a99072);
-  color:#222;
+.whatsapp-btn{
+    display:block;
+    text-align:center;
+    background:#25D366;
+    color:#fff;
+    padding:11px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
 }
 
-/* التواصل */
-.contact{
-  background:#173b32;
-  color:white;
+.whatsapp-btn:hover{
+    background:#1ebe5d;
 }
 
-.contact-box{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:20px;
+/* نافذة تكبير الصورة */
+.lightbox{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.94);
+    z-index:9999;
+    align-items:center;
+    justify-content:center;
+    padding:25px;
 }
 
-.contact-card{
-  background:#ffffff12;
-  border:1px solid #ffffff25;
-  border-radius:18px;
-  padding:25px;
+.lightbox.active{
+    display:flex;
 }
 
-.contact-card a{
-  color:white;
-  font-size:21px;
-  font-weight:bold;
+.lightbox img{
+    max-width:92%;
+    max-height:85vh;
+    object-fit:contain;
+    border-radius:8px;
+    box-shadow:0 5px 30px rgba(0,0,0,.5);
+}
+
+.close{
+    position:absolute;
+    top:18px;
+    right:25px;
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    border:0;
+    background:#fff;
+    color:#222;
+    font-size:30px;
+    cursor:pointer;
+    z-index:2;
+}
+
+.arrow{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:55px;
+    height:55px;
+    border:0;
+    border-radius:50%;
+    background:rgba(255,255,255,.9);
+    color:#173b32;
+    font-size:30px;
+    cursor:pointer;
+    z-index:2;
+}
+
+.arrow-right{
+    right:25px;
+}
+
+.arrow-left{
+    left:25px;
+}
+
+.lightbox-title{
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    color:white;
+    background:rgba(0,0,0,.6);
+    padding:7px 18px;
+    border-radius:20px;
+    font-size:14px;
+    white-space:nowrap;
+}
+
+/* المميزات */
+.info-box{
+    background:#fff;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    text-align:center;
+}
+
+.info-box h2{
+    color:#173b32;
+    margin-bottom:12px;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+    margin-top:25px;
+}
+
+.feature{
+    background:#f8f8f8;
+    padding:20px 10px;
+    border-radius:12px;
+}
+
+.feature strong{
+    display:block;
+    color:#173b32;
+    margin-top:7px;
+}
+
+/* واتساب ثابت */
+.whatsapp-floating{
+    position:fixed;
+    bottom:20px;
+    left:20px;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#25D366;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:28px;
+    box-shadow:0 5px 20px rgba(0,0,0,.25);
+    z-index:3000;
 }
 
 /* الفوتر */
 footer{
-  background:#102b25;
-  color:#dce8e3;
-  text-align:center;
-  padding:25px 0;
-  font-size:14px;
+    background:#173b32;
+    color:#fff;
+    text-align:center;
+    padding:30px 15px;
+    margin-top:60px;
+}
+
+footer strong{
+    color:#d8b477;
 }
 
 /* الجوال */
 @media(max-width:800px){
 
-  .hero-content,
-  .contact-box{
-    grid-template-columns:1fr;
-  }
+    .header-inner{
+        flex-direction:column;
+    }
 
-  .services,
-  .gallery{
-    grid-template-columns:1fr;
-  }
+    .logo{
+        font-size:20px;
+    }
 
-  .nav{
-    flex-direction:column;
-    align-items:flex-start;
-  }
+    .hero{
+        padding:55px 18px;
+    }
 
-  nav{
-    gap:12px;
-  }
+    .hero h1{
+        font-size:28px;
+    }
 
-  .hero{
-    padding:50px 0;
-  }
+    .hero p{
+        font-size:16px;
+    }
 
-  h1{
-    font-size:38px;
-  }
+    .gallery{
+        grid-template-columns:repeat(2,1fr);
+        gap:14px;
+    }
+
+    .image-box img{
+        height:220px;
+    }
+
+    .card-content{
+        padding:13px;
+    }
+
+    .card-content h3{
+        font-size:17px;
+    }
+
+    .features{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .arrow{
+        width:45px;
+        height:45px;
+        font-size:24px;
+    }
+
+    .arrow-right{
+        right:10px;
+    }
+
+    .arrow-left{
+        left:10px;
+    }
+}
+
+/* الجوال الصغير */
+@media(max-width:520px){
+
+    .gallery{
+        grid-template-columns:1fr;
+    }
+
+    .image-box img{
+        height:260px;
+    }
+
+    .hero h1{
+        font-size:25px;
+    }
+
+    .section{
+        width:94%;
+    }
+
+    .features{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .lightbox{
+        padding:10px;
+    }
+
+    .lightbox img{
+        max-width:96%;
+        max-height:75vh;
+    }
+
+    .lightbox-title{
+        max-width:80%;
+        overflow:hidden;
+        text-overflow:ellipsis;
+    }
 }
 </style>
-
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"LocalBusiness",
-  "name":"مطابخ مستعمل شبه جديد مع التوصيل والتركيب الرياض",
-  "description":"بيع مطابخ مستعملة وشبه جديدة بالرياض مع التوصيل والتركيب.",
-  "telephone":"+966505306798",
-  "address":{
-    "@type":"PostalAddress",
-    "addressLocality":"Riyadh",
-    "addressCountry":"SA"
-  },
-  "areaServed":"Riyadh"
-}
-</script>
-
 </head>
 
 <body>
 
+<!-- الهيدر -->
 <header>
-<div class="container nav">
 
-<div class="logo">
-مطابخ الرياض
-</div>
+    <div class="header-inner">
 
-<nav>
-<a href="#home">الرئيسية</a>
-<a href="#services">خدماتنا</a>
-<a href="#gallery">المطابخ</a>
-<a href="#contact">تواصل معنا</a>
-</nav>
+        <div class="logo">
+            مطابخ <span>جاهزة بالرياض</span>
+        </div>
 
-</div>
+        <a class="header-btn"
+           href="https://wa.me/966505306798?text=السلام%20عليكم،%20أرغب%20في%20طلب%20مطبخ%20جاهز">
+            تواصل معنا
+        </a>
+
+    </div>
+
 </header>
 
-<main>
 
-<section class="hero" id="home">
+<!-- الواجهة الرئيسية -->
+<section class="hero">
 
-<div class="container hero-content">
+    <h1>مطابخ جديدة جاهزة بالرياض</h1>
 
-<div>
+    <p>
+        تشكيلة متنوعة من المطابخ الجاهزة بتصاميم عصرية وكلاسيكية،
+        مناسبة للمنازل والشقق والاستراحات، مع خيارات متعددة من الألوان والتصاميم.
+    </p>
 
-<span class="badge">
-مطابخ مستعملة وشبه جديدة في الرياض
-</span>
-
-<h1>
-مطابخ جاهزة بجودة وسعر مناسب
-</h1>
-
-<p>
-نوفر مطابخ مستعملة وشبه جديدة بحالة جيدة، مع خدمة التوصيل والتركيب داخل الرياض.
-</p>
-
-<div class="buttons">
-
-<a class="btn whatsapp"
-href="https://wa.me/966505306798"
-target="_blank">
-تواصل واتساب
-</a>
-
-<a class="btn phone"
-href="tel:+966505306798">
-اتصل الآن
-</a>
-
-</div>
-
-</div>
-
-<div class="hero-box">
-
-<div class="hero-icon">🏠</div>
-
-<h2>
-خيارات متنوعة
-</h2>
-
-<p>
-ألوان وتصاميم ومقاسات متعددة حسب المتوفر.
-</p>
-
-</div>
-
-</div>
+    <a class="hero-btn"
+       href="https://wa.me/966505306798?text=السلام%20عليكم،%20أرغب%20في%20طلب%20مطبخ%20جاهز">
+        اطلب مطبخك عبر واتساب
+    </a>
 
 </section>
 
 
-<section id="services">
+<!-- المعرض -->
+<section class="section">
 
-<div class="container">
+    <div class="section-title">
 
-<div class="section-title">
+        <h2>معرض المطابخ الجاهزة</h2>
 
-<h2>
-خدماتنا
-</h2>
+        <p>
+            اضغط على أي صورة لمشاهدتها بالحجم الكامل والتنقل بين الصور
+        </p>
 
-<p>
-خدمة سهلة وسريعة لعملاء الرياض
-</p>
-
-</div>
-
-<div class="services">
-
-<div class="card">
-
-<div class="card-icon">🍳</div>
-
-<h3>
-مطابخ مستعملة
-</h3>
-
-<p>
-مطابخ مستعملة بتصاميم متنوعة وأسعار مناسبة.
-</p>
-
-</div>
+    </div>
 
 
-<div class="card">
-
-<div class="card-icon">✨</div>
-
-<h3>
-مطابخ شبه جديدة
-</h3>
-
-<p>
-خيارات شبه جديدة لمن يبحث عن الجودة بسعر اقتصادي.
-</p>
-
-</div>
+    <div class="gallery">
 
 
-<div class="card">
+        <!-- المطبخ 1 -->
+        <div class="card">
 
-<div class="card-icon">🚚</div>
+            <div class="image-box" onclick="openLightbox(0)">
 
-<h3>
-توصيل وتركيب
-</h3>
+                <img
+                    src="kitchen-1.jpg"
+                    alt="مطبخ خشبي بني جاهز بالرياض"
+                    loading="lazy"
+                >
 
-<p>
-نوفر خدمة التوصيل والتركيب داخل مدينة الرياض حسب الاتفاق.
-</p>
+                <span class="zoom-label">
+                    🔍 تكبير
+                </span>
 
-</div>
+            </div>
 
-</div>
+            <div class="card-content">
 
-</div>
+                <h3>مطبخ خشبي بني كلاسيكي</h3>
+
+                <p>
+                    تصميم عملي وأنيق بألوان خشبية مميزة،
+                    مناسب للمطابخ المنزلية.
+                </p>
+
+                <a
+                    class="whatsapp-btn"
+                    href="https://wa.me/966505306798?text=السلام%20عليكم،%20أرغب%20في%20طلب%20المطبخ%20الخشبي%20البني"
+                >
+                    💬 اطلب هذا المطبخ
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- المطبخ 2 -->
+        <div class="card">
+
+            <div class="image-box" onclick="openLightbox(1)">
+
+                <img
+                    src="kitchen-2.jpg"
+                    alt="مطبخ أخضر جاهز بالرياض"
+                    loading="lazy"
+                >
+
+                <span class="zoom-label">
+                    🔍 تكبير
+                </span>
+
+            </div>
+
+            <div class="card-content">
+
+                <h3>مطبخ أخضر بتصميم عصري</h3>
+
+                <p>
+                    تصميم هادئ وأنيق مع خزائن متعددة
+                    ومساحات تخزين عملية.
+                </p>
+
+                <a
+                    class="whatsapp-btn"
+                    href="https://wa.me/966505306798?text=السلام%20عليكم،%20أرغب%20في%20طلب%20المطبخ%20الأخضر"
+                >
+                    💬 اطلب هذا المطبخ
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- المطبخ 3 -->
+        <div class="card">
+
+            <div class="image-box" onclick="openLightbox(2)">
+
+                <img
+                    src="kitchen-3.jpg"
+                    alt="مطبخ أبيض كلاسيكي جاهز بالرياض"
+                    loading="lazy"
+                >
+
+                <span class="zoom-label">
+                    🔍 تكبير
+                </span>
+
+            </div>
+
+            <div class="card-content">
+
+                <h3>مطبخ أبيض كلاسيكي</h3>
+
+                <p>
+                    مطبخ أبيض أنيق بتفاصيل كلاسيكية
+                    ومساحات تخزين واسعة.
+                </p>
+
+                <a
+                    class="whatsapp-btn"
+                    href="https://wa.me/966505306798?text=السلام%20عليكم،%20أرغب%20في%20طلب%20المطبخ%20الأبيض"
+                >
+                    💬 اطلب هذا المطبخ
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- المطبخ 4 -->
+        <div class="card">
+
+            <div class="image-box" onclick="openLightbox(3)">
+
+                <img
+                    src="kitchen-4.jpg"
+                    alt="مطبخ أبيض مودرن جاهز بالرياض"
+                    loading="lazy"
+                >
+
+                <span class="zoom-label">
+                    🔍 تكبير
+                </span>
+
+            </div>
+
+            <div class="card-content">
+
+                <h3>مطبخ أبيض مودرن</h3>
+
+                <p>
+                    تصميم أبيض أنيق يناسب المساحات المختلفة
+                    ويمنح المطبخ مظهراً واسعاً.
+                </p>
+
+                <a
+                    class="whatsapp-btn"
+                    href="https://wa.me/966505306798?text=السلام%20عليكم،%20أرغب%20في%20طلب%20المطبخ%20الأبيض%20المودرن"
+                >
+                    💬 اطلب هذا المطبخ
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- المطبخ 5 -->
+        <div class="card">
+
+            <div class="image-box" onclick="openLightbox(4)">
+
+                <img
+                    src="kitchen-5.jpg"
+                    alt="مطبخ أبيض عملي جاهز بالرياض"
+                    loading="lazy"
+                >
+
+                <span class="zoom-label">
+                    🔍 تكبير
+                </span>
+
+            </div>
+
+            <div class="card-content">
+
+                <h3>مطبخ أبيض بتصميم عملي</h3>
+
+                <p>
+                    توزيع عملي للخزائن والأدراج مع سطح عمل
+                    مناسب للاستخدام اليومي.
+                </p>
+
+                <a
+                    class="whatsapp-btn"
+                    href="https://wa.me/966505306798?text=السلام%20عليكم،%20أرغب%20في%20طلب%20هذا%20المطبخ"
+                >
+                    💬 اطلب هذا المطبخ
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- المطبخ 6 -->
+        <div class="card">
+
+            <div class="image-box" onclick="openLightbox(5)">
+
+                <img
+                    src="kitchen-6.jpg"
+                    alt="مطبخ أبيض واسع جاهز بالرياض"
+                    loading="lazy"
+                >
+
+                <span class="zoom-label">
+                    🔍 تكبير
+                </span>
+
+            </div>
+
+            <div class="card-content">
+
+                <h3>مطبخ أبيض واسع</h3>
+
+                <p>
+                    تصميم مناسب للمطابخ الكبيرة مع عدد كبير
+                    من وحدات التخزين.
+                </p>
+
+                <a
+                    class="whatsapp-btn"
+                    href="https://wa.me/966505306798?text=السلام%20عليكم،%20أرغب%20في%20طلب%20هذا%20المطبخ"
+                >
+                    💬 اطلب هذا المطبخ
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </div>
 
 </section>
 
 
-<section id="gallery">
+<!-- المميزات -->
+<section class="section">
 
-<div class="container">
+    <div class="info-box">
 
-<div class="section-title">
+        <h2>لماذا تختار مطابخنا؟</h2>
 
-<h2>
-نماذج المطابخ
-</h2>
+        <p>
+            نوفر مطابخ جديدة وجاهزة بتصاميم متنوعة تناسب
+            احتياجات العملاء في الرياض، مع خيارات متعددة
+            من الألوان والأشكال والمساحات.
+        </p>
 
-<p>
-تتوفر لدينا تصاميم وألوان مختلفة حسب المخزون
-</p>
+        <div class="features">
 
-</div>
+            <div class="feature">
+                🏠
+                <strong>تصاميم متنوعة</strong>
+            </div>
 
-<div class="gallery">
+            <div class="feature">
+                ✨
+                <strong>شكل أنيق</strong>
+            </div>
 
-<div class="gallery-card">
-مطابخ خضراء
-</div>
+            <div class="feature">
+                📦
+                <strong>مساحات تخزين</strong>
+            </div>
 
-<div class="gallery-card">
-مطابخ خشبية
-</div>
+            <div class="feature">
+                📱
+                <strong>طلب عبر واتساب</strong>
+            </div>
 
-<div class="gallery-card">
-مطابخ بيضاء
-</div>
+        </div>
 
-<div class="gallery-card">
-مطابخ مودرن
-</div>
-
-<div class="gallery-card">
-مطابخ بألوان متنوعة
-</div>
-
-<div class="gallery-card">
-مطابخ جاهزة
-</div>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
 
-<section class="contact" id="contact">
+<!-- نافذة تكبير الصور -->
+<div class="lightbox" id="lightbox">
 
-<div class="container">
+    <button
+        class="close"
+        onclick="closeLightbox()"
+        aria-label="إغلاق"
+    >
+        ×
+    </button>
 
-<div class="section-title">
+    <button
+        class="arrow arrow-right"
+        onclick="nextImage()"
+        aria-label="الصورة التالية"
+    >
+        ›
+    </button>
 
-<h2>
-تواصل معنا
-</h2>
+    <button
+        class="arrow arrow-left"
+        onclick="prevImage()"
+        aria-label="الصورة السابقة"
+    >
+        ‹
+    </button>
 
-<p style="color:#dce8e3">
-للاستفسار عن المطابخ المتوفرة والأسعار
-</p>
+    <img
+        id="lightboxImage"
+        src=""
+        alt="صورة المطبخ"
+    >
+
+    <div
+        class="lightbox-title"
+        id="lightboxTitle"
+    ></div>
 
 </div>
 
-<div class="contact-box">
 
-<div class="contact-card">
-
-<p>
-واتساب
-</p>
-
-<a href="https://wa.me/966505306798" target="_blank">
-0505306798
+<!-- زر واتساب ثابت -->
+<a
+    class="whatsapp-floating"
+    href="https://wa.me/966505306798?text=السلام%20عليكم،%20أرغب%20في%20معرفة%20المطابخ%20المتوفرة"
+    aria-label="تواصل معنا عبر واتساب"
+>
+    💬
 </a>
 
-</div>
 
-
-<div class="contact-card">
-
-<p>
-اتصال مباشر
-</p>
-
-<a href="tel:+966505306798">
-0505306798
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-</main>
-
-
+<!-- الفوتر -->
 <footer>
 
-© 2026 مطابخ مستعمل شبه جديد مع التوصيل والتركيب الرياض — جميع الحقوق محفوظة
+    <p>
+        <strong>مطابخ جاهزة بالرياض</strong>
+    </p>
+
+    <p>
+        مطابخ جديدة • تصاميم متنوعة • تواصل مباشر عبر واتساب
+    </p>
+
+    <p>
+        © 2026 جميع الحقوق محفوظة
+    </p>
 
 </footer>
 
+
+<script>
+
+const kitchens = [
+
+    {
+        image:"kitchen-1.jpg",
+        title:"مطبخ خشبي بني كلاسيكي"
+    },
+
+    {
+        image:"kitchen-2.jpg",
+        title:"مطبخ أخضر بتصميم عصري"
+    },
+
+    {
+        image:"kitchen-3.jpg",
+        title:"مطبخ أبيض كلاسيكي"
+    },
+
+    {
+        image:"kitchen-4.jpg",
+        title:"مطبخ أبيض مودرن"
+    },
+
+    {
+        image:"kitchen-5.jpg",
+        title:"مطبخ أبيض بتصميم عملي"
+    },
+
+    {
+        image:"kitchen-6.jpg",
+        title:"مطبخ أبيض واسع"
+    }
+
+];
+
+let currentImage = 0;
+
+const lightbox =
+    document.getElementById("lightbox");
+
+const lightboxImage =
+    document.getElementById("lightboxImage");
+
+const lightboxTitle =
+    document.getElementById("lightboxTitle");
+
+
+function openLightbox(index){
+
+    currentImage = index;
+
+    lightboxImage.src =
+        kitchens[currentImage].image;
+
+    lightboxTitle.textContent =
+        kitchens[currentImage].title;
+
+    lightbox.classList.add("active");
+
+    document.body.style.overflow = "hidden";
+}
+
+
+function closeLightbox(){
+
+    lightbox.classList.remove("active");
+
+    document.body.style.overflow = "";
+
+}
+
+
+function nextImage(){
+
+    currentImage++;
+
+    if(currentImage >= kitchens.length){
+        currentImage = 0;
+    }
+
+    lightboxImage.src =
+        kitchens[currentImage].image;
+
+    lightboxTitle.textContent =
+        kitchens[currentImage].title;
+}
+
+
+function prevImage(){
+
+    currentImage--;
+
+    if(currentImage < 0){
+        currentImage = kitchens.length - 1;
+    }
+
+    lightboxImage.src =
+        kitchens[currentImage].image;
+
+    lightboxTitle.textContent =
+        kitchens[currentImage].title;
+}
+
+
+/* إغلاق عند الضغط خارج الصورة */
+
+lightbox.addEventListener("click",function(e){
+
+    if(e.target === lightbox){
+        closeLightbox();
+    }
+
+});
+
+
+/* الأسهم من لوحة المفاتيح */
+
+document.addEventListener("keydown",function(e){
+
+    if(!lightbox.classList.contains("active")){
+        return;
+    }
+
+    if(e.key === "ArrowRight"){
+        nextImage();
+    }
+
+    if(e.key === "ArrowLeft"){
+        prevImage();
+    }
+
+    if(e.key === "Escape"){
+        closeLightbox();
+    }
+
+});
+
+</script>
+
 </body>
-</html>
+  </html>
